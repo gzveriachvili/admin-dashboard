@@ -204,6 +204,16 @@ body {
   padding: 9px 18px 9px 18px;
   min-width: 100px;
   border-radius: 90px;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background: var(--side-bg);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
 }
 
 .content {
@@ -248,11 +258,21 @@ body {
 
   -webkit-box-shadow: -2px 5px 7px 0px rgba(0, 0, 0, 0.35);
   box-shadow: -2px 5px 7px 0px rgba(0, 0, 0, 0.35);
+
+  transition: 0.7s ease-in-out;
+}
+
+.card:hover {
+  background-color: var(--side-hover);
 }
 
 .card h4 {
   font-size: 1.1rem;
   margin-bottom: 2px;
+}
+
+.card h4:hover {
+  cursor: pointer;
 }
 
 .card-icons {
